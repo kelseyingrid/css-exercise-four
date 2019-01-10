@@ -1,4 +1,83 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
-  font-size: 10px;
+  background-color: #E8E8E9;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.container {
+  width: 100%;
+}
+
+div {
+  display: block;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.preview {
+  height: 300px;
+}
+
+.container > h1 {
+  font-family: sans-serif;
+  font-size: 65%;
+  letter-spacing: .15em;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+.preview h1 {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.baku {
+  background: url(../images/baku.jpg);
+  background-size: cover;
+}
+
+.london {
+  background: url(../images/london.png);
+  background-size: cover;
+}
+
+.madrid {
+  background: url(../images/madrid.jpg);
+  background-size: cover;
+}
+
+.rome {
+  background: url(../images/rome.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 575px){
+  .container {
+    padding-left: 15%; /** Is there a better way to center the 2 columns on the page? **/
+  }
+  .preview {
+      display: inline-block;
+      height: 200px;
+      margin: 1%;
+      width: 40%;
+    }
+}
+
+@media screen and (min-width: 991px){
+  .container {
+    padding-left: 10%; /** Same question as above **/
+  }
+
+  .preview {
+    display: inline-block;
+    margin: 1%;
+    width: 20%;
+    height: 150px;
+  }
 }
