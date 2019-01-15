@@ -10,16 +10,13 @@ body {
 
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 
 div {
   display: block;
   margin-bottom: 3%;
   width: 100%;
-}
-
-.preview {
-  height: 300px;
 }
 
 .container > h1 {
@@ -30,7 +27,11 @@ div {
   padding-bottom: 7%;
   text-align: center;
   text-transform: uppercase;
-  }
+}
+
+.preview {
+  height: 300px;
+}
 
 .preview h1 {
   padding-left: 10%;
@@ -40,7 +41,7 @@ div {
 .baku {
   background: url(../images/baku.jpg);
   background-size: cover;
-}
+ }
 
 .london {
   background: url(../images/london.png);
@@ -59,19 +60,16 @@ div {
 
 @media screen and (min-width: 575px){
   .container {
-    padding-left: 15%; /** Is there a better way to center the 2 columns on the page? **/
   }
   .preview {
       display: inline-block;
       height: 200px;
-      margin: 1%;
       width: 40%;
     }
 }
 
 @media screen and (min-width: 991px){
   .container {
-    padding-left: 10%; /** Same question as above **/
   }
 
   .preview {
